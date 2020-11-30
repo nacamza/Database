@@ -1,25 +1,3 @@
-# [RabbitMQ](https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
-Vamos a instalar RabbitMQ con docker-compose mediante el siguiente comando
-````
-docker-compose up -d
-````
-# Proyecto 
-El proyecto hay dos carpetas en donde:
-- Publisher: Se encuentra el código que genera mensaje
-- Subscriber: Se encuentra el código que consume mensaje
-## Ejemplos
-Dentro de las carpetas Publisher y Subscriber vamos a encontrar cuatro archivos que implementan los siguientes ejemplos
-- queues.js: Implementa un ejemplo sin configurar el exchange (por defecto utiliza el directo)
-- Subscriber: queues.js
-### Ejemplos con exchange
-Tipos de Exchanges:
-- Direct: el mensaje se enruta a las colas cuya clave de enlace coincide exactamente con la clave de enrutamiento del mensaje. 
-- Fanout: un intercambio de fanout enruta los mensajes a todas las colas vinculadas a él.
-- Topic: Topic realiza una coincidencia de comodines entre la clave de enrutamiento y el patrón de enrutamiento especificado en el enlace.
-- Headers: Headers utiliza los atributos del encabezado del mensaje para el enrutamiento.
-
-![](https://www.cloudamqp.com/img/blog/exchanges-topic-fanout-direct.png)
-
 ## [Configuración  avanzada](https://www.rabbitmq.com/queues.html#optional-arguments)
 ### [Message TTL](https://www.rabbitmq.com/ttl.html#per-queue-message-ttl)
 Cuánto tiempo puede vivir un mensaje publicado en una cola antes de que se descarte (milisegundos). (Establece el argumento "x-message-ttl")
