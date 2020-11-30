@@ -64,7 +64,7 @@ Iniciamos rabbitmq
 ````
 service rabbitmq-server start
 ````
-Para avilitar la interfaz grafica
+Para habilitar la interfaz grafica
 ````
 rabbitmq-plugins enable rabbitmq_management
 ````
@@ -82,3 +82,4 @@ para darle permiso de admin
 ````
 rabbitmqctl set_user_tags MiUsuario administrator
 ````
+
