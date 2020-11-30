@@ -64,4 +64,12 @@ Iniciamos rabbitmq
 ````
 service rabbitmq-server start
 ````
+Para avilitar la interfaz grafica
+````
+rabbitmq-plugins enable rabbitmq_management
+````
 ## [Cambiar store data](https://www.rabbitmq.com/relocate.html)
+Abrir/crear ``/etc/rabbitmq/rabbitmq-env.conf`` y agregar
+````
+RABBITMQ_MNESIA_DIR=/Mi-directorio
+````
