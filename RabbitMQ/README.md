@@ -73,3 +73,12 @@ Abrir/crear ``/etc/rabbitmq/rabbitmq-env.conf`` y agregar
 ````
 RABBITMQ_MNESIA_DIR=/Mi-directorio
 ````
+## Crear usuario 
+Para crear un usuario 
+````
+rabbitmqctl add_user MiUsuario
+````
+para darle permiso de admin
+````
+rabbitmqctl set_user_tags MiUsuario administrator
+````
