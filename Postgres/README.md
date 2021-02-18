@@ -20,9 +20,9 @@ sudo lsof -i -P -n
 ### Crear estructura en PostgreSQL
 
 Vamos a crear en PostgreSQL lo siguiente:
-- User: nacamza
-- Pass: @nacamza2021
-- Tabla: nacamza
+- User: vizion
+- Pass: @viziona2021
+- Tabla: vizion
 
 #### Crear Usuario vizion en PostgreSQL:
 Ejecutamos el comando ``createuser`` en PostgreSQL con el usuario **postgres**, nos va a pedir el nombre del usuario y nos permite asignarle permisos de superusuario
@@ -31,11 +31,11 @@ Ejecutamos el comando ``createuser`` en PostgreSQL con el usuario **postgres**, 
 ````
 #### Crear el usuario vizion en Linux, podemos usar la misma password de PostgreSQL **@vizion2021**
 ````
-sudo adduser nacamza
+sudo adduser vizion
 ````
 #### Creamos la base de datos vizion
 ````
-sudo -u postgres createdb nacamza
+sudo -u postgres createdb vizion
 ````
 #### Ingresar a PostgreSQL con el usuario vizion
 ````
@@ -47,7 +47,7 @@ sudo -u vizion psql
 ````
 ### Probamos la conexión con la bd
 ````
-psql -U nacamza -d nacamza -h 127.0.0.1 -W
+psql -U vizion -d vizion -h 127.0.0.1 -W
 ````
 #### Para listar las bd de PostgreSQL
 ````
