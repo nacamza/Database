@@ -43,7 +43,7 @@ sudo -u vizion psql
 ````
 #### Establecemos el pass **@nacamza2021** al usuario nacamza en PostgreSQL
 ````
-\password nacamza
+\password vizion
 ````
 ### Probamos la conexión con la bd
 ````
