@@ -1,0 +1,15 @@
+version: "3.3"
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: vizion
+      POSTGRES_PASSWORD: "@vizion2021"
+      POSTGRES_DB: vizion   
+      PGDATA: /var/lib/postgresql/data/pgdata     
+    volumes:
+      - "./dbTest:/var/lib/postgresql/data"
+
