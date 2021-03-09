@@ -6,10 +6,10 @@ version: "3.3"
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: vizion
-      POSTGRES_PASSWORD: "@vizion2021"
-      POSTGRES_DB: vizion   
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: "@pass"
+      POSTGRES_DB: dbname   
       PGDATA: /var/lib/postgresql/data/pgdata     
     volumes:
-      - "./dbTest:/var/lib/postgresql/data"
+      - "./db:/var/lib/postgresql/data"
 
