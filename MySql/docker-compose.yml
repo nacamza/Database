@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+   mysql:
+     image: mysql:8
+     ports:
+       - "3306:3306"     
+     volumes:
+       - ./dbMysql:/var/lib/mysql
+     environment:
+       MYSQL_ROOT_PASSWORD: @vizion2021
+       MYSQL_DATABASE: vizion
+       MYSQL_USER: vizion
+       MYSQL_PASSWORD: @vizion2021
